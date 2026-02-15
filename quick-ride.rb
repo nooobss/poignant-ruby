@@ -13,3 +13,13 @@ exit unless "restaurant".include? "aura"
 teddy_bear = 12.59 #snake case untuk var lokal dan var instance
 total = teddy_bear + 1
 puts total
+gaji_buna_ted = 100_000_000
+puts gaji_buna_ted
+
+# simbols
+# seperti variabels
+# biasa digunakan untuk key (hash)
+
+# konstan
+# Kapital semua huruf
+MAX_USERS = 100
