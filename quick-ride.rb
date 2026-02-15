@@ -23,3 +23,17 @@ puts gaji_buna_ted
 # konstan
 # Kapital semua huruf
 MAX_USERS = 100
+p MAX_USERS
+
+# jika variabel dan konstanta = nouns
+# method = verbs
+
+# class method
+# adalah method milik Class
+# menulis methodnya diawali dengan self
+# contoh : 
+class Kue
+  def self.manis
+    puts "tambah gula"
+  end
+end
