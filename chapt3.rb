@@ -5,7 +5,7 @@ exit unless "restaurant".include? "aura"
 
 =end
 
-
+=begin
 # kode ruby seperti dialog dalam bahasa inggris
 ["toast", "cheese", "wine"].each { |food| print food.capitalize + " "}
 
@@ -52,3 +52,39 @@ teh.manis
 # Class Method : perilaku pembuat objek
 
 Kue.pahit
+
+=end
+
+# Global Vars
+# start with dollar sign $
+$counter = 1
+puts $counter
+
+# Instance Vars
+# start with at (@) symbol
+# biasa digunakan sbg atribut pada single objek
+@wallet = 100
+puts @wallet
+
+# Class Vars
+# start with double at (@@) symbol
+# digunakan utk define atribut class
+# jika front_door, back_door, iron_door, adalah contoh instance yang memiliki vars
+# maka Door memiliki class Var
+# @@width = 400
+
+# Blocks
+
+# Apapun yang diapit curly braces adalah block
+2.times {print "hello Solo \n"}
+
+# Block argument
+# set variabel yang di apit pipe | | dipisahkan dengan koma
+# { |x,y | x + y}
+
+# Range
+# (1..7) : 1 s.d 7
+
+# Arrays
+nilai = [77,67,80,91]
+p nilai
