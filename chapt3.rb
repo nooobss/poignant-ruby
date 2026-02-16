@@ -28,12 +28,13 @@ p MAX_USERS
 # jika variabel dan konstanta = nouns
 # method = verbs
 
-# class method
-# adalah method milik Class
-# menulis methodnya diawali dengan self
-# contoh : 
 class Kue
-  def self.manis
+  def manis
     puts "tambah gula"
   end
 end
+
+# penggunaan method, nempel pada variabel/konstanta lalu dihubungkan titik
+# contoh :
+teh = Kue.new
+teh.manis
