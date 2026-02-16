@@ -88,3 +88,11 @@ puts @wallet
 # Arrays
 nilai = [77,67,80,91]
 p nilai
+
+# Hashes
+# dictionary dengan curly braces
+biodata = {"nama" => "jowokee", "umr" => 69}
+puts biodata
+
+warna = ['merah', 'kuning', 'hijau']
+warna.each {|color| puts 'ini warna-' + color}
