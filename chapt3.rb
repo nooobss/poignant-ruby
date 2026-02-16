@@ -26,11 +26,15 @@ MAX_USERS = 100
 p MAX_USERS
 
 # jika variabel dan konstanta = nouns
-# method = verbs
+# Method = verbs
 
 class Kue
   def manis
     puts "tambah gula"
+  end
+
+  def self.pahit
+    puts "tambah garam"
   end
 end
 
@@ -38,3 +42,13 @@ end
 # contoh :
 teh = Kue.new
 teh.manis
+
+# Class Method
+# Penggunaan Class Method
+
+
+# Beda Instance Method vs Class Method
+# Instance Method : perilaku salah satu objek yang berhasil dibuat
+# Class Method : perilaku pembuat objek
+
+Kue.pahit
