@@ -58,7 +58,8 @@ jokoui = {
     "kelemahan" => "ijazah"
 }
 
-p jokoui
+# p jokoui
+p jokoui["skill"]
 
 # symbol
 praowo = {
@@ -66,4 +67,9 @@ praowo = {
     kelemahan: "lantai wc" 
 }
 
-p praowo
+# p praowo
+p praowo[:skill]
+
+nama = "joko widodo prabowo subianto"
+nama_baru = nama.gsub('o', 'x')
+puts nama_baru
