@@ -73,3 +73,4 @@ p praowo[:skill]
 nama = "joko widodo prabowo subianto"
 nama_baru = nama.gsub('o', 'x')
 puts nama_baru
+puts nama
