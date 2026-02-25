@@ -109,3 +109,19 @@ puts("halo juga")
 p File::methods.sort # menampilkan semua method yang tersedia di kelas File
 puts "===================="
 p Array::methods.sort # menampilkan semua method yang tersedia di kelas Array
+
+# sorting menggunakan pipeline
+
+kitty_toys =
+[
+    {shape: "tabung", color: "merah"},
+    {shape: "kubus", color: "biru"},
+    {shape: "bola", color: "hijau"},
+]
+
+sorted_toys = kitty_toys.sort_by { |item| item[:shape] }
+p sorted_toys
+
+sorted_toys.each do |item|
+    puts "bangun: #{item[:shape]} berwarna: #{item[:color]}"
+end
