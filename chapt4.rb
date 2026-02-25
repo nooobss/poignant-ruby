@@ -94,6 +94,7 @@ puts nama
 puts nama[0..3]
 =end
 
+=begin
 teks_coba ="    ini adalah    "
 teks_bersih = teks_coba.strip # strip : menghapus spasi di awal dan akhir string
 puts teks_bersih
@@ -110,6 +111,7 @@ p File::methods.sort # menampilkan semua method yang tersedia di kelas File
 puts "===================="
 p Array::methods.sort # menampilkan semua method yang tersedia di kelas Array
 
+=end
 # sorting menggunakan pipeline
 
 kitty_toys =
@@ -125,3 +127,17 @@ p sorted_toys
 sorted_toys.each do |item|
     puts "bangun: #{item[:shape]} berwarna: #{item[:color]}"
 end
+
+# belajar next dan break
+non_kubus = 0
+kitty_toys.each do |item|
+    next if item[:shape] == "kubus" #next bertindak sebagai skip,melompati iterasi dan lanjut ke iterasi berikutnya
+    non_kubus += 1
+end
+puts non_kubus
+
+kitty_toys.each do |item|
+    break if item[:shape] == "bola" #break akan hentikan iterasi jika kondisi terpenuhi
+    puts "bangun: #{item[:shape]}-#{item[:color]}"
+end
+puts "stopped"
