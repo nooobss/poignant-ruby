@@ -47,6 +47,22 @@ puts email
 
 =end
 
+# flipping script
+angka = 12345
+angka_reverse = angka.to_s.reverse.to_i
+puts angka_reverse
+
+# flipping script dari inputan keyboard
+puts "masukkan teks yang ingin dibolak :"
+teks = gets.chomp
+unless teks.empty? # method empty? akan mengecek jika string kosong atau ""
+    teks_reverse = teks.reverse
+    puts "result: #{teks_reverse}"
+else
+    puts "input tidak boleh kosong"
+end
+
+=begin
 # Hash
 # key-value pair
 # dibuat dengan 2 cara, hash rocket dan symbol
@@ -71,6 +87,8 @@ praowo = {
 p praowo[:skill]
 
 nama = "joko widodo prabowo subianto"
-nama_baru = nama.gsub('o', 'x')
+nama_baru = nama.gsub('o', 'x') #gsub : global substitution, mengganti semua karakter yang ditemukan
 puts nama_baru
 puts nama
+puts nama[0..3]
+=end
