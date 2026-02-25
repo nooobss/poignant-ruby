@@ -106,3 +106,6 @@ Kernel::puts("halo")
 puts("halo juga")
 # method instance : method yang harus dipanggil melalui objek
 # method class : method yang dipanggil melalui kelas, biasanya dengan nama kelas diikuti titik 2 2x (::)
+p File::methods.sort # menampilkan semua method yang tersedia di kelas File
+puts "===================="
+p Array::methods.sort # menampilkan semua method yang tersedia di kelas Array
