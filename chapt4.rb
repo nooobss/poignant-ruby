@@ -46,7 +46,7 @@ puts email
 # << : fungsinya seperti + , concatenate/append
 
 =end
-
+=begin
 # flipping script
 angka = 12345
 angka_reverse = angka.to_s.reverse.to_i
@@ -61,6 +61,7 @@ unless teks.empty? # method empty? akan mengecek jika string kosong atau ""
 else
     puts "input tidak boleh kosong"
 end
+=end
 
 =begin
 # Hash
@@ -92,3 +93,16 @@ puts nama_baru
 puts nama
 puts nama[0..3]
 =end
+
+teks_coba ="    ini adalah    "
+teks_bersih = teks_coba.strip # strip : menghapus spasi di awal dan akhir string
+puts teks_bersih
+puts teks_coba
+
+# konsep
+# kernel method : method yang bisa dipanggil tanpa objek, langsung dari kelas Kernel
+# contoh kernel method :puts, print
+Kernel::puts("halo")
+puts("halo juga")
+# method instance : method yang harus dipanggil melalui objek
+# method class : method yang dipanggil melalui kelas, biasanya dengan nama kelas diikuti titik 2 2x (::)
